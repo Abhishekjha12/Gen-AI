@@ -349,15 +349,300 @@
 # my_str='Hello'
 # print(str)
 
-best_friend = 'Anne'
-print('My best friend is ', best_friend)
+# best_friend = 'Anne'
+# print('My best friend is ', best_friend)
 
-my_value = 15
+# my_value = 15
 
-age = 18
-print(age)
+# age = 18
+# print(age)
 
-a, b = '10', '20'
-print(a + b)
+# a, b = '10', '20'
+# print(a + b)
 
-print('To comment a line of code you # at the beginning of the line.')
+# print('To comment a line of code you # at the beginning of the line.')
+
+# String in Python
+
+# model_summary = 'This is how AI revolutionize the Industry '
+# print(model_summary)
+
+# feedback = 'Press the # button to continue'
+
+# print('AI says, I\'m here to assist you.')
+# print("AI says, I'm here to assist you.")
+# ai_response = """ Hello there
+# this is one another way to write the code.
+# thanks for watching this out
+# """
+
+# print(ai_response)
+
+# print('\\ is essential for handling escape characters in python')
+
+
+
+
+
+
+
+
+# USER INPUT IN PYTHON
+# command = input('Ask your AI assisstant a question: ')
+# print('Your question was:', command)
+
+# Taking other data type as input
+# iterations = input('Enter the number of iterations ')
+# iterations = int(iterations)
+# dataset = input('Enter the number of dataset ')
+# dataset  = int(dataset)
+# total=iterations * dataset
+# print("Total processing time: ",total)
+
+# CORE STRING OPERATIONS: INDEXING , SLICING , CONCATENATION
+
+# message = 'Abhishek you are soo good!'
+# print(message[1])
+# print(message[8])
+# print(message[-1])
+
+# n = len(message)
+# print(n)
+# print(message[n-1])
+
+# Strings are immutable in Python, so individual characters cannot be modified after the string is created.
+
+# CONCATENATION
+# greeting = 'Hello'
+# role = 'AI Enthusiast'
+# print(greeting + " " + role)
+
+# print('version ' + str(4.0))
+
+# tech = 'Machine Learning'
+# print(tech[0:7]) # String slicing syntax = String[start : stop]
+# print(tech[:7])
+# print(tech[8:])
+# print(tech[-4:])
+# print(tech[0:14:2]) # starting from 0th index to 14th index every 2nd index will be displayed, since its even only 6 characters will be displayed
+# print(tech[::-1]) # This reverse out string
+
+
+# Common String method
+# x = 10
+# s = "abc"
+# print(type(s), type(x))
+
+# model_output = "AI is the future of everything"
+# print(model_output.lower())
+# print(model_output.upper())
+
+# response = ' 🚀 Hello GenAI! 🤖 '
+# print(response.split())
+# print(response.split(' 🚀'))
+
+# terms = ['AI', 'GENAI', 'CS', 'LLM', 'NLP']
+# buzzwords_string = ', '.join(terms)
+# print(buzzwords_string)
+
+# url = "https://example.com"
+# cleaned_url = url.removeprefix("https://")
+# print(cleaned_url)
+
+# file_name = 'State_of_ai_2025.pdf'
+# cleaned_filename = file_name.removesuffix('.pdf')
+# print(cleaned_filename)
+
+# help(str)
+
+# FORMATTED STRING: USING F-STRINGS FOR CLEAN OUTPUT
+# model_name = 'GPT'
+# version = 4
+# print("Hello from " + model_name + '-' + str(version)+ '!')
+
+# # Using F-String we can do like
+# print(f'Hello from {model_name}-{version}!')
+
+# token_used = 10
+# cost_per_token = 0.001
+# total_cost = f'{token_used * cost_per_token:.4f}'
+# print(f'Total cost for this message: {total_cost}')
+
+# FSTRING FORMATTING WITH = DEBUGGING
+
+# name, age  = "Abhishek" , 23
+# print(f'Your name is {name} and you are {age} years old')
+# print(f'Your name is {name = } and you are {age = } years old')
+
+# r = 13.3
+# PI = 3.141592
+
+# print(f'Area of circle with radius of {r} is {PI * r ** 2}')
+# print(f'Area of circle with radius of {r = } is {PI * r ** 2 = }')
+
+# Challenge #1
+
+# A company has a revenue of 45,897,513.
+# Calculate its profit, assuming profit is 12.7% of the revenue.
+# Display the result rounded to two decimal places.
+
+# r = 45897513
+# print(f'Profit of the company is {45897213 * 0.127:.2f}')
+
+# Challenge #2
+# Consider the following string declaration which is part of the output of a Linux command.
+
+# my_str = 'wlo1 Link encap:Ethernet HWaddr b4:6d:83:77:85:f3'
+
+# Write a Python script that extracts the MAC address (b4:6d:83:77:85:f3) from the string.
+
+# my_str = 'wlo1 Link encap:Ethernet HWaddr b4:6d:83:77:85:f3'
+# print(my_str.removeprefix('wlo1 Link encap:Ethernet HWaddr '))
+
+
+# Challenge #3
+
+# Display the following strings literally:
+
+# It displayed: "You've got an error!"
+
+# \n means a new line.
+
+# \ is known as the escape character.
+# msg = "It displayed: \"You've got an error!\""
+# print(msg)
+
+# print("\\n means a new line")
+# print("\\ is know as the escape character.")
+
+
+
+# Challenge #4
+
+# Write a Python script to convert feet (ft) to centimeters (cm).
+
+# Conversion: 1 ft = 30.48 cm
+
+# Prompt the user to enter a value in feet.
+
+# Display the result in centimeters with two decimal places, formatted using an f-string.
+
+# prompt = float(input("Enter the value is feet "))
+# conversion = prompt * 30.48
+# print(f'The value in centimeter is {conversion:.2f}cm')
+
+# Challenge #5
+
+# Write a Python script to check if a string is a palindrome.
+
+# s = input("Enter your string ")
+# p = (s[::-1])
+# print(f'Is {s} a palindrome? {s==s[::-1]}')
+
+# Challenge #6
+
+# Change the solution of the previous challenge to ignore whitespace and letter case when checking if a string is a palindrome.
+# s = input("Enter your string ")
+# p = (s[::-1])
+# check = (s.replace(' ',''))
+# print(check.upper())
+
+# Challenge #7
+
+# Write a Python script that extracts the first and last two characters from a user-entered string.
+
+# Example:
+
+# Input: 'Hello!'
+
+# Output: 'Heo!'
+
+# s = input("Enter your string ")
+# fh = s[:2]
+# sh = s[-2:]
+
+# ns = fh + sh
+# print(ns)
+
+# Write a Python script that replaces all occurrences of the first character in a string with '$', except for the first occurrence itself.
+
+# Example:
+
+# Input: 'mama'
+
+# Output: 'ma$a'
+
+# s = input("Enter your string")
+# char = s[0]
+# ns = s[1:].replace(char, '$')
+# print(char + ns)
+
+#Alternate method
+# s = input("Enter your string ")
+# first_char = s[0]
+# rest = s[1:]
+# mr = rest.replace(first_char,"$")
+# result = first_char + mr
+# print(result)
+
+
+
+
+# Challenge #9
+# Write a Python program to remove the character at the nth index from a non-empty string.
+# The nth index is provided by the user.
+# n = int(input("Enter nth index character to remove"))
+# ms = input("Enter your string")
+# fp = ms[0:n]
+# lp = ms[n+1:]
+# ns = fp + lp 
+# print(ns)
+
+
+# Challenge #10
+
+# Write a Python script that removes characters at odd index positions from a given string.
+
+# s = input("Enter your string ")
+# ns = s[::2]
+# print(ns)
+
+
+
+# Write a Python script that prompts the user for a circle's radius and calculates its area.
+
+# Formula: Area = π * r² (π = 3.1415)
+
+# Display the area with four decimal places using an f-string.
+
+# r = int(input("Enter the value of radius of circle "))
+# PI = 3.1415
+
+# print(f'The Area of cicle with radius {r = } is {PI*r**2:.4f}')
+
+
+
+# Challenge #12
+# Write a Python script that counts the number of occurrences of a substring in a given string, ignoring letter case.
+
+# s = input("Enter Your String ")
+# n = int(input("Select Start of Substring "))
+# m=int(input("Select End of String "))
+# ss = s[n:m]
+# new_subString = ss.lower()
+# print(new_subString.count(s))
+
+
+#Challenge 13
+# Write a Python script to format a number using:
+
+# US/UK format: A comma , as the thousands separator
+
+# EU format: A period . as the thousands separator
+
+# s = int(input("Enter the number string "))
+# us_uk = (f'The numbers in US format is {s:,}')
+# print(us_uk)
+
+# eu = str(us_uk.replace(",","."))
+# print(eu)
